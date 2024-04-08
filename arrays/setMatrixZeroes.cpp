@@ -53,8 +53,8 @@ public:
             // iterate over the matrix
             // if you encouter a zero that assign 1 at the same place in row and column array
             // array
-            // then iterate over the row array and if encouter 1 then assign the whole row zero
-            // same for the column
+            // then iterate over the matrix again you find the current row or column 1 in row/column array and if encouter 1 then assign it zero
+            
 
 
 

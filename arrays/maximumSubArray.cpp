@@ -32,16 +32,18 @@ public:
         //Optimal solution
          //create a maxSum with minimum value of int_min
          // and a sum variable with the 0 as the initial
-         //iterate over the array add elements one by one
+         //iterate over the array
          // if the current sum  is negative set it zero
         
-         // and if the current sum is positive or zero check if adding the element 
-         // is increasing the sum then add the element
+         // and again check if the current sum is positive or zero 
+         // add the element
+         // then if the sum is greater than maxSum store it in maxSum
 
         if(nums.size()==1) return nums[0];
          int maxSum = INT_MIN;
          int sum = 0;
          for(int i=0;i<nums.size();i++){
+            
             if(sum<0){ 
             sum = 0;
             }

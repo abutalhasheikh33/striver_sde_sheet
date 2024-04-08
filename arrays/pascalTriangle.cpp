@@ -68,13 +68,13 @@ public:
         // if n=8 and r=4 then row = 7 and col = 3
         //  7*6*5*4*3*2*1 / 3*2*1 * 4*3*2*1  ; this both will be divided  4*3*2*1/4*3*2*1
         // and remaining will be 7*6*5/ 3*2*1 
-        // so we have to always multiply the row col number of times
+        // so we have to always multiply the row col number of times/
         // here col = 3 so always we have to go back and multiply three steps behind row
         // i.e if row = 9 col = 4 then 9 will multiplied 4 times 9*8*7*6/4*3*2*1
         // int ans =1 will be created
-        // loop will run till col times start from j=1 to j<=col;
+        // loop will run till col times start from j=1 to j<=col; 
         // ans = ans*(row/j);
-        // row-=1;
+        
 
 
         // void printPascalElement(int n,int r){

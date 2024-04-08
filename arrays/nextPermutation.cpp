@@ -2,10 +2,11 @@ class Solution {
 public:
     void nextPermutation(vector<int>& nums) {
         //optimal solution
-        // we have to find next large number
+        // we have to find next large number using the given numbers
         // find the breakpoint for eg : a[] = 2 1 5 4 3 0 0
         // we start iterating from last since we have to find the next largest permutation
         // the condition will be a[i]<a[i+1] and when this condition satisifies
+        // store the index and break the loop at first breakpoint
         // we found our breakpoint at 1 that is at i=1;
         // if we dont find it we just reverse the array and return it
         // which means that this is the largest permutation and we need to return the first permutation
@@ -13,7 +14,6 @@ public:
         // we have to run a loop and find a number just larger than 1 and swap with it
         // which will be 3 after swap array will look like: 2 3 5 4 1 0 0      
         // then we have to reverse the remaining array because it is in a descending order
-        // and we have to find the next large number or permutation
         // we will use reverse function and after that array will look like
         // 2 3 0 0 1 4 5
          int index=-1;
